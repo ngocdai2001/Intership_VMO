@@ -39,7 +39,7 @@ img {
     float: left;
 }
 
-.nav-items {
+.nav__items {
     float: right;
 }
 
@@ -53,12 +53,12 @@ img {
     text-transform: uppercase;
 }
 
-.active {
+.nav__active {
     letter-spacing: 4px;
 }
 
 /* Slide */
-.slider {
+.slide {
     background-image: url('https://www.w3schools.com/w3images/mac.jpg');
     background-position: center;
     background-size: cover;
@@ -67,7 +67,7 @@ img {
     padding-top: 50%;
 }
 
-.content-slide {
+.slide__content {
     position: absolute;
     top: 50%;
     left: 0%;
@@ -76,11 +76,11 @@ img {
     color: #fff; 
 }
 
-.content-slide p {
+.slide__content p {
     margin-top: 50px;
 }
 
-.content-slide p a {
+.slide__content p a {
     padding: 16px 24px;
     margin-top: 16px;
     background-color: #fff;
@@ -89,19 +89,19 @@ img {
     opacity: 0.5;
 }
 
-.content-slide p a:hover {
+.slide__content p a:hover {
     opacity: 0.7;
 }
 
-.icon-slide {
+.slide__items {
     padding: 24px 48px;
 }
 
-.icon-slide li {
+.slide__items li {
     display: inline-block;
 }
 
-.icon-slide i {
+.slide__items i {
     color: #fff;
     list-style-type: none;
     opacity: 0.6;
@@ -112,20 +112,21 @@ img {
     padding: 128px 16px;
 }
 
-.info, .myteam, .product, .contact h3 {
+.info h3, .myteam h3, .product h3, .contact h3 {
     text-align: center;
     margin: 10px 0px;
 }
 
-.sub-info, .sub-myteam, .sub-product {
+.info__content, .myteam__content, 
+.product__content, .contact__content {
     text-align: center;
     margin: 18px 0px;
-    font-size: 18px;
+    font-size: 18px;    
 }
 
-.info-items,
-.myteam-items,
-.evaluate-items {
+.info__items,
+.myteam__items,
+.evaluate__items {
     margin-top: 64px;
     text-align: center;
     padding: 0px 16px;
@@ -134,12 +135,12 @@ img {
     grid-template-areas: 'left mid-left mid-right right ';
 }
 
-.info-items i {
+.info__items i {
     font-size: 64px;
     margin-bottom: 16px;
 }
 
-.info-items p {
+.info__items p {
     font-size: 18px;
     margin: 18px 0px;
 }
@@ -168,23 +169,25 @@ img {
     flex-wrap: nowrap;
 }
 
-.content-main, .img-main, .skill-component, .content-skill{
+.main__content, .main__img, .skill__component, .skill__content {
     padding: 0px 16px;
     width: 50%;
 }
 
-.content-main, .content-skill h3 {
-    font-weight: 400;
-    font-size: 24px;
+.main__content h3,
+.skill__content h3,
+.contact__content h3 {
     margin: 10px 0px;
 }
 
-.content-main, .content-skill p {
+.main__content p,
+.contact__content p,
+.skill__content p {
     margin: 15px 0px;
 }
 
-.content-main a, 
-.contact-item button {
+.main__content a, 
+.contact__items button {
     background-color: black;
     padding: 8px 16px;
     text-decoration: none;
@@ -192,13 +195,13 @@ img {
     display: inline-block;
 }
 
-.content-main a:hover {
+.main__content a:hover {
     cursor: pointer;
     color: black;
     background-color: #ccc;
 }
 
-.img-main img {
+.main__img img {
     border-radius: 8px;
 }
 
@@ -218,6 +221,7 @@ img {
 
 .element p {
     margin: 15px 0px;
+    text-align: start;
 }
 
 .element p a {
@@ -246,11 +250,11 @@ img {
     text-align: center;
 }
 
-.evaluate-items span {
+.evaluate__items span {
     font-size: 36px;
 }
 
-.product-items {
+.product__items {
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 8px;
@@ -263,11 +267,11 @@ img {
 }
 
 /* Skill */
-.skill-component i {
+.skill__component i {
     margin-right: 16px;
 }
 
-.skill-component p {
+.skill__component p {
     letter-spacing: 4px;
 }
 
@@ -303,21 +307,21 @@ img {
 }
 
 /* Contact */
-.contact-item {
+.contact__items {
     margin-top: 48px;
 }
 
-.contact-item p {
+.contact__items p {
     margin: 15px 0px;
 }
 
-.contact-item p i {
+.contact__items p i {
     margin-right: 16px;
     font-size: 36px;
     text-align: center;
 }
 
-.contact-item form p i {
+.contact__items form p i {
     font-size: 14px;
 } 
 
@@ -326,24 +330,24 @@ img {
     padding: 128px 16px;
 }
 
-.contact-item {
+.contact__items {
     margin: 48px 16px 0px 16px;
     
 }
 
-.contact-item input {
+.contact__items input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
 }
 
-.contact-item button:hover {
+.contact__items button:hover {
     cursor: pointer;
     color: black;
     background-color: #ccc;
 }
 
-.contact-item img {
+.contact__items img {
     margin-top: 48px;
 }
 
@@ -361,11 +365,11 @@ img {
     color: black;
 }
 
-.icon-footer {
+.footer__items {
     margin: 16px 0px;
 }
 
-.icon-footer li {
+.footer__items li {
     display: inline-block;
     font-size: 25px;
 }
